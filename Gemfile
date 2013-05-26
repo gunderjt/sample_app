@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
 gem 'bootstrap-sass'
+gem 'bcrypt-ruby'
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -9,6 +11,7 @@ gem 'bootstrap-sass'
 group :development, :test do
   gem 'rspec-rails'
   gem 'sqlite3'
+  gem 'annotate'
 end
 
 gem 'json'
@@ -29,6 +32,9 @@ gem 'jquery-rails'
 
 group :test do
   gem 'capybara', '1.1.2'
+  gem 'factory_girl_rails'
+  gem 'guard-spork'
+  gem 'spork'
 end
 
 group :production do
